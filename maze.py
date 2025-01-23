@@ -2,10 +2,14 @@ import random
 import sys
 
 class Point:
+    """
+    To create a point object which stores the directions it is positioned in. The __repr__ method is defined for debugging purposes
+    """
     def __init__(self, pos, start = False, end = False, directions=None):
         self.start = start
         self.end = end
         if directions is None:
+            #[[left, right], [up, down]] as negative y on pygame corresponds to
             self.directions = [[False, False], [False, False]]
         else:
             self.directions = directions

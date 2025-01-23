@@ -8,7 +8,7 @@ pygame.init()
 screen = pygame.display.set_mode((600, 600))
 
 maze = Maze()
-maze.fully_random()
+# maze.fully_random()
 tick_counter = 0
 clock = pygame.time.Clock()
 n = 200
